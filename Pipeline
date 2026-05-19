@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage ("Checkout"){
+            steps{
+                sh 'echo "checked the code process..."'
+            }
+        stage ("Build"){
+            steps{
+                sh 'echo "Starting the build process..."'
+            }
+        }
+        stage ("Deployment"){
+            steps{
+                sh 'echo "Deploying aplication..."'
+            }
+          }
+        }
+    }
+}
